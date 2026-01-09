@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Categories | RiverCity Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="https://codehs.com/uploads/e3f208aa42bca6662b64a77928075171" class="logo">
+        <div class="header-text">
+            <h1>RiverCity Connect</h1>
+            <p>Community Resource Categories</p>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Resources</a>
+        <a href="response.html">Submit a Response</a>
+        <a href="aboutus.html">About us</a>
+        <a href="sources.html">Sources</a>
+    </nav>
+</header>
+
+<section class="category-section">
+    <h2>Community Resources</h2>
+
+    <!-- FILTER -->
+    <select id="serviceFilter" onchange="filterResources()" style="margin-bottom: 25px; display:block; margin-left:auto; margin-right:auto;">
+        <option value="all">All Services</option>
+        <option value="health">🩺 Health</option>
+        <option value="education">📚 Education</option>
+        <option value="support">🤝 Support</option>
+        <option value="business">💼 Business / Non-Profit</option>
+    </select>
+
+    <!-- Health -->
+    <div class="resource-row">
+        <a class="resource-card health" href="https://homeoftheinnocents.org/" target="_blank">
+            <img src="https://codehs.com/uploads/c184b12c5abd3963a5a7cb77bd58c56e" alt="Home of the Innocents">
+            <h3>Home of the Innocents</h3>
+            <p>Pediatric care, therapy, and foster care support</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card health" href="https://cclou.org/" target="_blank">
+            <img src="https://codehs.com/uploads/ebb44f886806282351a1c696f01756c7" alt="Catholic Charities">
+            <h3>Catholic Charities of Louisville</h3>
+            <p>Emergency assistance, housing support, refugee services</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card health" href="https://sparchope.org/" target="_blank">
+            <img src="https://codehs.com/uploads/f960c59bf5f7b459878a2b664ddcb95c" alt="SPARC Hope">
+            <h3>SPARC Hope</h3>
+            <p>Community outreach and support programs</p>
+            <p>Louisville, KY</p>
+        </a>
+    </div>
+
+    <!-- Education -->
+    <div class="resource-row">
+        <a class="resource-card education" href="https://educationaljustice.org/" target="_blank">
+            <img src="https://codehs.com/uploads/46d711c6d0d669766fc45a4991780c0d" alt="Educational Justice">
+            <h3>Educational Justice</h3>
+            <p>Free tutoring and mentorship for middle school students</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card education" href="https://www.lul.org/" target="_blank">
+            <img src="https://codehs.com/uploads/9c4ea9bd68fa03686fffc37552919f13" alt="Louisville Urban League Education">
+            <h3>Louisville Urban League – Education Programs</h3>
+            <p>Youth academic support, reading and math programs</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card education" href="https://carnegiecenterlex.org/" target="_blank">
+            <img src="https://codehs.com/uploads/8f12de1f417eb57e5b891f2d8868bc76" alt="Carnegie Center for Literacy and Learning">
+            <h3>Carnegie Center for Literacy and Learning</h3>
+            <p>Literacy and K-12 tutoring programs</p>
+            <p>Lexington, KY</p>
+        </a>
+    </div>
+
+    <!-- Support -->
+    <div class="resource-row">
+        <a class="resource-card support" href="https://kyrm.org/" target="_blank">
+            <img src="https://codehs.com/uploads/5abb67be2cbc52ba6329e9aec1a04074" alt="Kentucky Refugee Ministries">
+            <h3>Kentucky Refugee Ministries</h3>
+            <p>Support and mentoring programs for refugee families</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card support" href="https://familyscholarhouse.org/" target="_blank">
+            <img src="https://codehs.com/uploads/3d56ad7060d9f2c69a14c277c8a390c5" alt="Family Scholar House">
+            <h3>Family Scholar House – Support Services</h3>
+            <p>Family and student support services</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card support" href="https://americanacc.org/" target="_blank">
+            <img src="https://codehs.com/uploads/3f99d59c3606a5e0dbe860bd46496a83" alt="Americana Community Center">
+            <h3>Americana Community Center</h3>
+            <p>Adult education, GED, ESL, and youth programs</p>
+            <p>Louisville, KY</p>
+        </a>
+    </div>
+
+    <!-- Business / Non-Profit -->
+    <div class="resource-row">
+        <a class="resource-card business" href="https://www.metrounitedway.org/" target="_blank">
+            <img src="https://codehs.com/uploads/64b9d5f7738d374f3b0c58b24f81544c" alt="Metro United Way">
+            <h3>Metro United Way</h3>
+            <p>Community programs, funding, volunteer coordination</p>
+            <p>Louisville, KY</p>
+        </a>
+
+        <a class="resource-card business" href="https://cvky.org/" target="_blank">
+            <img src="https://codehs.com/uploads/32d51fa18cb24d1b4f363750a27082b9" alt="Community Ventures">
+            <h3>Community Ventures</h3>
+            <p>Small business loans and entrepreneurship support</p>
+            <p>Lexington, KY</p>
+        </a>
+
+        <a class="resource-card business" href="https://bgcf.org/" target="_blank">
+            <img src="https://codehs.com/uploads/06d575dd38a8c974c2645a5a2fc65c6c" alt="Blue Grass Community Foundation">
+            <h3>Blue Grass Community Foundation</h3>
+            <p>Community grants and philanthropic support</p>
+            <p>Lexington, KY</p>
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 RiverCity Connect. All Rights Reserved.</p>
+    <p>Louisville, Kentucky</p>
+</footer>
+
+<script>
+function filterResources() {
+    var selected = document.getElementById("serviceFilter").value;
+    var cards = document.querySelectorAll(".resource-card");
+
+    cards.forEach(function(card) {
+        if (selected === "all" || card.classList.contains(selected)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
